@@ -8,4 +8,4 @@ EXPOSE 1900/udp
 #ENTRYPOINT ["/usr/sbin/minidlnad -S -r"]
 # Health check
 #HEALTHCHECK --interval=60s --timeout=10s --retries=6 CMD \
-  curl --silent --fail localhost:8200 || exit 1
+#  curl --silent --fail localhost:8200 || exit 1
