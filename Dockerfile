@@ -2,8 +2,8 @@ FROM alpine:3.18
 
 RUN apk add --no-cache minidlna
 
-EXPOSE 8200
-EXPOSE 1900/udp
+#EXPOSE 8200
+#EXPOSE 1900/udp
 
 ENTRYPOINT ["/usr/sbin/minidlnad", "-S", "-r"]
 # Health check
