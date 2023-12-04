@@ -1,6 +1,6 @@
 FROM alpine:3.18
 
-RUN apk add --no-cache minidlna
+RUN apk add --no-cache minidlna curl
 
 #EXPOSE 8200
 #EXPOSE 1900/udp
