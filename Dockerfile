@@ -4,9 +4,6 @@ FROM alpine:3
 # Installer minidlna et curl
 RUN apk add --no-cache minidlna curl
 
-# Augmenter la limite de inotify pour éviter les avertissements
-RUN echo "fs.inotify.max_user_watches=524288" > /etc/sysctl.conf && sysctl -p
-
 # Exposer les ports nécessaires (commenté pour éviter les conflits, vous pouvez décommenter si nécessaire)
 EXPOSE 8200
 EXPOSE 1900/udp
